@@ -43,7 +43,7 @@ body {
 	letter-spacing: -.03em;
 }
 
-.global-locale-card p { margin: 0 0: .5rem; color: #515154; line-height: 1.5; }
+.global-locale-card p { margin: 0 0 .5rem; color: #515154; line-height: 1.5; }
 .global-locale-card label { margin-top: .75rem; font-weight: 600; }
 .global-locale-card label span { font-weight: 400; color: #6e6e73; }
 .global-locale-card select,
