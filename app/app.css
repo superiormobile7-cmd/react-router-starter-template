@@ -14,3 +14,42 @@ body {
 		color-scheme: dark;
 	}
 }
+
+.global-locale-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: grid;
+	place-items: center;
+	padding: 1.5rem;
+	background: rgb(0 0 0 / 45%);
+}
+
+.global-locale-card {
+	width: min(100%, 32rem);
+	display: grid;
+	gap: .6rem;
+	padding: 2rem;
+	border-radius: 1.5rem;
+	background: white;
+	color: #1d1d1f;
+	box-shadow: 0 24px 64px rgb(0 0 0 / 25%);
+}
+
+.global-locale-card h1 {
+	margin: 0;
+	font-size: 1.9rem;
+	font-weight: 700;
+	letter-spacing: -.03em;
+}
+
+.global-locale-card p { margin: 0 0: .5rem; color: #515154; line-height: 1.5; }
+.global-locale-card label { margin-top: .75rem; font-weight: 600; }
+.global-locale-card label span { font-weight: 400; color: #6e6e73; }
+.global-locale-card select,
+.global-locale-card button { min-height: 2.8rem; border-radius: .75rem; padding-inline: .8rem; font: inherit; }
+.global-locale-card select { border: 1px solid #c7c7cc; background: white; }
+.global-locale-card button { margin-top: .8rem; border: 0; background: #0071e3; color: white; font-weight: 650; cursor: pointer; }
+.global-locale-card button:hover { background: #0077ed; }
+
+[dir="rtl"] .global-locale-card { text-align: right; }
