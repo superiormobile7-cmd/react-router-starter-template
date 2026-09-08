@@ -8,6 +8,7 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
+import { LocaleGate } from "./locale";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -25,7 +26,7 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
+		<html lang="en" dir="ltr">
 			<head>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,7 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body>
-				{children}
+				<LocaleGate>{children}</LocaleGate>
 				<ScrollRestoration />
 				<Scripts />
 			</body>
